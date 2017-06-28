@@ -34,6 +34,7 @@
             CadastrarUsuario(){
                 UService.postUsuario(this.usuario)
                 .then(response => {
+                    alert("Cadastro com Sucesso !!");
                     this.usuario = {};
                     this.$router.push('/')
                 })

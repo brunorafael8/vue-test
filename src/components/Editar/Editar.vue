@@ -38,6 +38,7 @@
              SalvarUsuario(){
                 UService.putUsuario(this.usuario)
                 .then(response => {
+                    alert("Editado com Sucesso !!");
                     this.usuario = {};
                     this.$router.push('/')
                 })
